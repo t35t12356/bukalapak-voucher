@@ -1,9 +1,12 @@
+//Recode @RiyanCoday
+//KONTOL 
+
 const rp = require('request-promise');
 const random_ua = require('random-ua');
 const randstr = require('randomstring');
 const inquirer = require('inquirer');
 const fs = require('fs');
-//
+// 
 const base = "BLMOII";
 let length = 4;
 //
@@ -41,12 +44,15 @@ async function start(base, length, berapakali) {
 	for(let i = 0; i < berapakali; i++){
 		const kodenya = await generateCode(base, length);
 		const checking = await check(kodenya, length);
-		if (checking == "Voucher hanya berlaku untuk transaksi di Aplikasi Android Bukalapak dan Aplikasi iOS Bukalapak") {
-			fs.appendFileSync('live.txt', `${kodenya} [ ${checking} ] - c0dayTeam \n`);
+		if (checking == "Pastikan kamu memasukkan kode voucher yang benar") {
+			fs.appendFileSync('dd.txt', `${kodenya} [ ${checking} ] - c0dayTeam \n`);
+						    console.log("DIE "+kodenya);
+
 		} else {
-			fs.appendFileSync('die.txt', `${kodenya} [ ${checking} ] - c0dayTeam\n`);
+			fs.appendFileSync('gg.txt', `${kodenya} [ ${checking} ] - c0dayTeam\n`);
+			    console.log("LIVE "+kodenya);
 		}
-		console.log(i+`. ${kodenya} [ ${checking} ]`);
+		//console.log(i+`. ${kodenya} [ ${checking} ]`);
 	}
 }
 
