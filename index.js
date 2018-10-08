@@ -42,20 +42,20 @@ async function start(base, length, berapakali) {
 		const kodenya = await generateCode(base, length);
 		const checking = await check(kodenya, length);
 		if (checking == "Voucher hanya berlaku untuk transaksi di Aplikasi Android Bukalapak dan Aplikasi iOS Bukalapak") {
-			fs.appendFileSync('live.txt', `${kodenya} [ ${checking} ]\n`);
+			fs.appendFileSync('live.txt', `${kodenya} [ ${checking} ] - c0dayTeam \n`);
 		} else {
-			fs.appendFileSync('die.txt', `${kodenya} [ ${checking} ]\n`);
+			fs.appendFileSync('die.txt', `${kodenya} [ ${checking} ] - c0dayTeam\n`);
 		}
 		console.log(i+`. ${kodenya} [ ${checking} ]`);
 	}
 }
 
-console.log(`Bukalapak Voucher Extrap Based.`)
+console.log(`Coday - BukaLapak.`)
 
 inquirer.prompt([
 	{
 		type:'input',
-		message:'Berapa kali gan? :',
+		message:'Mau Berapa Tod? :',
 		name:'kalinya',
 		validate: function(data) {
 			data = data.match(/[0-9]/);
