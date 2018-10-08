@@ -1,5 +1,5 @@
-//Recode @RiyanCoday
-//KONTOL 
+//ReCode by @RiyanCoday
+//KONTOL LAH KLEAN
 
 const rp = require('request-promise');
 const random_ua = require('random-ua');
@@ -46,13 +46,11 @@ async function start(base, length, berapakali) {
 		const checking = await check(kodenya, length);
 		if (checking == "Pastikan kamu memasukkan kode voucher yang benar") {
 			fs.appendFileSync('dd.txt', `${kodenya} [ ${checking} ] - c0dayTeam \n`);
-						    console.log("DIE "+kodenya);
-
+		console.log(i+`.DIE ${kodenya} [ ${checking} ] -c0dayTeam`);
 		} else {
 			fs.appendFileSync('gg.txt', `${kodenya} [ ${checking} ] - c0dayTeam\n`);
-			    console.log("LIVE "+kodenya);
+		console.log(i+`.LIVE ${kodenya} [ ${checking} ] -c0dayTeam`);
 		}
-		//console.log(i+`. ${kodenya} [ ${checking} ]`);
 	}
 }
 
