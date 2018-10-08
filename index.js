@@ -50,7 +50,7 @@ async function start(base, length, berapakali) {
 		}else if (checking == "Voucher hanya berlaku untuk transaksi di Aplikasi Android Bukalapak dan Aplikasi iOS Bukalapak") {
 			fs.appendFileSync('cdy.txt', `${kodenya} [ 200k ] - c0dayTeam \n`);
 		console.log(i+`.LIVE ${kodenya} [ 200K ] -c0dayTeam`);
-		}else if (checking == "Silakan konfirmasi email akun Bukalapak Anda untuk menggunakan voucher ini") {
+		}else if (checking == "Silakan konfirmasi email akun Bukalapak Anda untuk menggunakan voucher ini.") {
 			fs.appendFileSync('50.txt', `${kodenya} [ 50K ] - c0dayTeam \n`);
 		console.log(i+`.LIVE ${kodenya} [ 50K ] -c0dayTeam`);
 		} else {
