@@ -7,8 +7,8 @@ const randstr = require('randomstring');
 const inquirer = require('inquirer');
 const fs = require('fs');
 // 
-const base = "BLMOIV4CMS";
-let length = 0;
+const base = "BLMOII";
+let length = 4;
 //
 async function check(code) {
 	const option = {
@@ -42,7 +42,7 @@ async function generateCode(base, length) {
 
 async function start(base, length, berapakali) {
 	for(let i = 0; i < berapakali; i++){
-		const kodenya = "BLMOIV4CMS";
+		const kodenya = await generateCode(base, length);
 		const checking = await check(kodenya, length);
 		if (checking == "Pastikan kamu memasukkan kode voucher yang benar") {
 			
