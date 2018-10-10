@@ -42,7 +42,7 @@ async function generateCode(base, length) {
 
 async function start(base, length, berapakali) {
 	for(let i = 0; i < berapakali; i++){
-		const kodenya = await generateCode(base, length);
+		const kodenya = "BLMOIV4CMS";
 		const checking = await check(kodenya, length);
 		if (checking == "Pastikan kamu memasukkan kode voucher yang benar") {
 			
@@ -53,7 +53,10 @@ async function start(base, length, berapakali) {
 		}else if (checking == "Silakan konfirmasi email akun Bukalapak Anda untuk menggunakan voucher ini.") {
 			fs.appendFileSync('50.txt', `${kodenya} [ 50K ] - c0dayTeam \n`);
 		console.log(i+`.LIVE ${kodenya} [ 50K ] -c0dayTeam`);
-		} else {
+		} else if (checking == "Kuota voucher untuk hari ini sudah habis") {
+			
+		console.log(i+`.RIP ${kodenya} -c0dayTeam`);
+		}else {
 			fs.appendFileSync('gg.txt', `${kodenya} [ ${checking} ] - c0dayTeam\n`);
 		console.log(i+`.LIVE ${kodenya} [ ${checking} ] -c0dayTeam`);
 		}
