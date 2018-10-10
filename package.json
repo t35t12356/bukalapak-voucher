@@ -2,11 +2,11 @@
   "name": "bukalapak-extraper",
   "version": "1.0.0",
   "description": "Bukalapak Voucher Extrap",
-  "main": "index.js",
+  "main": "cdy.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node cdy.js"
   },
-  "author": "silentc0ders",
+  "author": "LupaBapak",
   "license": "ISC",
   "dependencies": {
     "fs": "0.0.1-security",
