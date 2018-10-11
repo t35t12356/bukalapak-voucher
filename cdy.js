@@ -7,8 +7,8 @@ const randstr = require('randomstring');
 const inquirer = require('inquirer');
 const fs = require('fs');
 // 
-const base = "BLMOIA";
-let length = 4;
+const base = "BLMO";
+let length = 6;
 //
 async function check(code) {
 	const option = {
