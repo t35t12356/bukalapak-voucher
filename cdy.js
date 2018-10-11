@@ -7,7 +7,7 @@ const randstr = require('randomstring');
 const inquirer = require('inquirer');
 const fs = require('fs');
 // 
-const base = "BLMOIX";
+const base = "BLMOIN";
 let length = 4;
 //
 async function check(code) {
